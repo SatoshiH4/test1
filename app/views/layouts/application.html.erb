@@ -7,7 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header>
+  <div class="header-logo">
+    <%= link_to("casualTrip","/")%><!--トップページへのリンク-->
+  </div>
+  
+  <ul class="header-menus">
+    <li>
+     <%= link_to("我々のサービス紹介へ","/about")%> <!--サービス紹介ページへのリンク-->
+    </li>
+  </ul>
+  <li class="posts">
+     <%= link_to("ツアー一覧へ","/posts")%> <!--ツアー一覧へのリンク-->
+  </li>
+  <li class="login">
+      <%= link_to("Log in","/login")%> <!--Log inへのリンク-->
+  </li>
+  <li class="signup">
+      <%= link_to("Sign up","/signup")%> <!--Sign upへのリンク-->
+  </li>
+ 
+</header>
 <%= yield %>
 
 </body>

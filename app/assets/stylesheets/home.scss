@@ -1,0 +1,79 @@
+
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.header-logo {
+  list-style-type: none;
+  position:absolute;
+  padding: 0px;
+  top: 0;
+  margin-left: 5px;
+}
+
+.header-menus {
+  list-style-type: none;
+  position:absolute;
+  top: -15px;
+  margin-left: 150px;
+}
+
+.posts{
+  list-style-type: none;
+  position:absolute;
+  padding: 0px;
+  top: 500px;
+  margin-left: 750px;
+}
+
+.login {
+  list-style-type: none;
+  position:absolute;
+  padding: 0px;
+  top: 0;
+  margin-left: 1400px;
+}
+
+.signup {
+  list-style-type: none;
+  position:absolute;
+  padding: 0px;
+  top: 0;
+  margin-left: 1500px;
+}
+
+.top-message {
+  list-style-type: none;
+  padding: 0px;
+  top: 1200px;
+  margin-left: 0px;
+  background-image: url("/toppic.jpg");
+  background-size:cover;
+  height:600px;
+}
+
+
+
+.search-button{
+  list-style-type: none;
+  padding: 0px;
+  top: 400px;
+  margin-left: 600px;
+}
+
+.guide{
+  list-style-type: none;
+  position:absolute;
+  padding: 0px;
+  top: 600px;
+  margin-left: 1400px;
+}
+
+body {
+  color: #FFD700;
+  background-color: #FFFFFF;
+  margin: 0;
+  min-height: 1vh;
+}
