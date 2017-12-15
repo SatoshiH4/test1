@@ -5,12 +5,8 @@ html {
   letter-spacing: 1px;
 }
 
-.header-logo {
-  list-style-type: none;
-  position:absolute;
-  padding: 0px;
-  top: 0;
-  margin-left: 5px;
+header{
+  padding:30px;
 }
 
 .header-menus {
@@ -50,11 +46,7 @@ html {
   top: 1200px;
   margin-left: 0px;
   background-image: url("/toppic.jpg");
-  background-size:cover;
-  height:600px;
 }
-
-
 
 .search-button{
   list-style-type: none;

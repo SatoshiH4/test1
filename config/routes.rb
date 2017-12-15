@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  get 'posts/index'
-
-  #get 'home/top'
-  #root 'application#hello' 
+  
   get "/" => "home#top"
   get "about" => "home#about"
+  
+  get "signup" => "users#new"
+
+  resources :users
+  
+
+  resources :posts do
+    get 'contact'
+  end
 end

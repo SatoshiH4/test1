@@ -1,0 +1,20 @@
+<div class= "posts-show">
+    <%= @post.plan_name %>    
+    <%= simple_format @post.content %> 
+</div>
+
+<div class="posts-contact-detail">
+    <%= "詳細"%>    
+</div>
+
+<div class="chat-part">
+</div>
+<div>
+<%= link_to "ガイド", @user %>
+</div>
+<div class="posts-contact">
+<%= link_to("コンタクト","/posts/#{@post.id}/contact")%>    
+</div>
+
+<%= link_to '修正する', @post %>
+

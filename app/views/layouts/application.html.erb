@@ -18,15 +18,26 @@
     </li>
   </ul>
   <li class="posts">
-     <%= link_to("ツアー一覧へ","/posts")%> <!--ツアー一覧へのリンク-->
+
+     <%= link_to 'ツアー一覧へ', posts_path %>
   </li>
-  <li class="login">
-      <%= link_to("Log in","/login")%> <!--Log inへのリンク-->
+  <li class="new">
+      <%= link_to "新規投稿", new_post_path %> <!--新規投稿へのリンク-->
   </li>
-  <li class="signup">
-      <%= link_to("Sign up","/signup")%> <!--Sign upへのリンク-->
+  <li class="users-index">
+      <%= link_to "ガイド一覧", users_path %>
   </li>
- 
+  <li class="users-new">
+      <%= link_to("新規登録","/signup")%> <!--ユーザー新規登録へのリンク-->
+  </li>
+  
+  
+<% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+<% end %>
+
 </header>
 <%= yield %>
 

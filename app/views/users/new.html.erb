@@ -1,0 +1,17 @@
+<%= form_for @user do |f| %>
+    <div class="posts-create">
+        <p> ユーザー名</p>
+        <%= f.text_field :name %>
+        <p> メールアドレス</p>
+        <%= f.text_area :email, rows: 10 %>
+        <%= f.submit '新規登録' %>
+    </div>
+<% end %>
+
+<% @user.errors.full_messages.each do |message| %>
+          <div class="form-error">
+            <%= message %>
+          </div>
+        <% end %>
+
+</div>

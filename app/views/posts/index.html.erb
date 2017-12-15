@@ -11,11 +11,12 @@
 
 <div class=main posts-index">
   <div class="container">
-    <% @suggestion.each do |post|%>
-    </div class ="top-index-item">
-        <%= post%>
-    <div>
+    <% @posts.each do |post|%>
+      <div class="post-index-plan_name">
+      <%= link_to(post.plan_name,"/posts/#{post.id}")%>
+      </div>
     <% end %>
-    
   </div>
 </div>
+
+

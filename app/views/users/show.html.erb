@@ -1,0 +1,12 @@
+<div class= "users-show">
+    <%= @user.name %>
+
+    <%= @user.created_at%>
+</div>
+
+<% @user.posts.each do |post| %>
+  <%= link_to post.plan_name, post %>
+<% end %>
+
+
+
