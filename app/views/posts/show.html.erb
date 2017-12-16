@@ -1,21 +1,34 @@
-<div class= "posts-show">
-    <%= @post.plan_name %>    
-    <%= simple_format @post.content %> 
-</div>
+<!-- about-top -->
+<div class="about" id="about">
+  <!-- container -->
+  <div class="container">
+	<div class="about-info">
+	  <h3>Tour Contents</h3>
+	</div>
+	<div class="about-top-grids">
+	  <div class="col-md-8 about-top-grid">
+		<% @post %>
+	  </div>
+	  <div class="col-md-4 about-top-grid " >
+	    <img src="images/m1.jpg" alt="" />
+	  </div>
+	</div>
+    <div class= "posts-show">
+      <h2><%= @post.plan_name %></h2>
+          <%= simple_format @post.content %> 
+    </div>
 
-<div class="posts-contact-detail">
-    <%= "詳細"%>    
-    <%= image_tag @post.image.thumb.url %>
-</div>
+    <div class="posts-contact-detail">
+      <%= image_tag @post.image.thumb.url %>
+    </div>
 
-<div class="chat-part">
+    <div class="chat-part"></div>
+    <div>
+      <%= link_to "ガイド", @user %>
+    </div>
+    <div class="posts-contact">
+      <%= link_to("コンタクト","/posts/#{@post.id}/contact")%>    
+    </div>
+  </div>
 </div>
-<div>
-<%= link_to "ガイド", @user %>
-</div>
-<div class="posts-contact">
-<%= link_to("コンタクト","/posts/#{@post.id}/contact")%>    
-</div>
-
-<%= link_to '修正する', @post %>
-
+<!-- //about-top -->
