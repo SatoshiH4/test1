@@ -14,6 +14,7 @@
     <% @posts.each do |post|%>
       <div class="post-index-plan_name">
       <%= link_to(post.plan_name,"/posts/#{post.id}")%>
+      <%= image_tag post.image.thumb.url %>
       </div>
     <% end %>
   </div>
