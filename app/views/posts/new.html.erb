@@ -2,6 +2,8 @@
     <div class="posts-create">
         <%= f.text_field :plan_name %>
         <%= f.text_area :content, rows: 10 %>
-        <%= f.submit '投稿' %>
+    　　<%= f.file_field :image %> 
+    　　<%= f.submit '投稿' %>
     </div>
 <% end %>
+
