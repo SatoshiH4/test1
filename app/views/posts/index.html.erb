@@ -7,9 +7,12 @@
 			<% @posts.each do |post|%>
         <div class="col-md-4 gallery-grids">
   				<%= link_to(post_path(post)) do %>
+  				<% if post.image.thumb.present? %> 
   				  <%= image_tag post.image.thumb.url, class: "img-responsive zoom-img" %>
+  				  <% end %>
   				  <%= link_to(post.plan_name, post_path(post)) %>
   				<% end %>
+  				
   		</div>
       <% end %>
     </div>

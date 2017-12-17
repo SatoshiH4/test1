@@ -1,3 +1,38 @@
+<!-- about-top -->
+<div class="about" id="about">
+  <!-- container -->
+  <div class="container">
+	<div class="about-info">
+	  <h3>Tour Contents</h3>
+	</div>
+	<div class="about-top-grids">
+	  <div class="col-md-8 about-top-grid">
+		<% @user %>
+	  </div>
+	  <div class="col-md-4 about-top-grid " >
+	    <img src="images/m1.jpg" alt="" />
+	  </div>
+	</div>
+    <div class= "posts-show">
+      <h2><%= @user.name %></h2>
+          <%= simple_format @user.email %> 
+    </div>
+
+    <div class="posts-contact-detail">
+      <%= image_tag @post.image.thumb.url %>
+    </div>
+
+    <div class="chat-part"></div>
+    <div>
+      <%= link_to "ガイド", @user %>
+    </div>
+    <div class="posts-contact">
+      <%= link_to("コンタクト","/posts/#{@post.id}/contact")%>    
+    </div>
+  </div>
+</div>
+<!-- //about-top -->
+
 <div class= "users-show">
     <%= @user.name %>
 

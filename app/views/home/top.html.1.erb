@@ -99,21 +99,54 @@ Whether taking bath with wild monkeys in hot spring, climbing up the Mt.Fuji in 
 			<div class="team-row">
 				<h3 class="agile-title">Guides</h3> 
 				<p>Find your own tour guides</p>
-				
-				<% @users.each do |user| %>
-					<%= link_to(user_path(user)) do %>
-						<div class="col-md-3 team-grids">
-							<div class="team-agile-img"> 
-								<%= image_tag user.image.thumb.url %>
-								<div class="view-caption">
-									<div class="w3ls-info">
-										<h4><%= user.name %></h4> 
-									</div>
-								</div>    
+				<div class="col-md-3 team-grids">
+					<div class="team-agile-img"> 
+					
+					<%= @users.each do |user| %>
+						<a href="#"><img src="images/t#{user.id}.jpg" alt="img"></a>
+						<div class="view-caption">
+							<div class="w3ls-info">
+								
+								<h4><%= link_to("user.name", user_path(User.first)) %></h4> 
 							</div>
-						</div>
-					<% end %>
-				<% end %>
+						</div>  
+						<% end %>
+						
+					</div>
+				</div>					
+				<div class="col-md-3 team-grids">
+					<div class="team-agile-img"> 
+						<a href="#"><img src="images/t2.jpg" alt="img"></a>
+						<div class="view-caption">
+							<div class="w3ls-info">
+								<h4>Kanae </h4> 
+							</div>
+						
+						</div>    
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-agile-img"> 
+						<a href="#"><img src="images/t3.jpg" alt="img"></a>
+						<div class="view-caption">
+							<div class="w3ls-info">
+								<h4>Haruki</h4> 
+							</div>
+							
+						</div>    
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-agile-img"> 
+						<a href="#"><img src="images/t4.jpg" alt="img"></a>
+						<div class="view-caption">
+							<div class="w3ls-info">
+								<h4>Keisuke</h4> 
+							</div>
+							
+						</div>    
+					</div>
+				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>

@@ -20,10 +20,11 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find_by(id:params[:id])
+    @post = Post.find_by(id:params[:id])
   end
   
   private
   def user_params
-    params.require(:user).permit(:name, :email)
+    params.require(:user).permit(:name, :email, :image)
   end
 end

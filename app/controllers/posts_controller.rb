@@ -29,6 +29,10 @@ class PostsController < ApplicationController
   def contact
   end
   
+  def contact_create
+    redirect_to("/posts/contact")
+  end
+
   private
   def post_params
     params.require(:post).permit(:plan_name, :content, :image)

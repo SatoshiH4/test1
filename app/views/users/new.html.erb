@@ -4,7 +4,9 @@
         <%= f.text_field :name %>
         <p> メールアドレス</p>
         <%= f.text_area :email, rows: 10 %>
-        <%= f.submit '新規登録' %>
+        <p> プロフィール画像</p>
+　　    <%= f.file_field :image %> （画像用に追加したカラムの名前）
+　　    <%= f.submit '新規登録' %>
     </div>
 <% end %>
 
